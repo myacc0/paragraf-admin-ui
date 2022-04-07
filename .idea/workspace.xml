@@ -1,20 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fe12316-0fd1-443f-baeb-a62d35fa5868" name="Default Changelist" comment="" />
+    <list default="true" id="6fe12316-0fd1-443f-baeb-a62d35fa5868" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/translation/conversion/raw/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/translation/entries/ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/translation/locales/ru_RU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Authentication/Auth0/Auth0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Authentication/Auth0/Auth0Callback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Dashboard/Dashboard.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Dashboard/DashboardRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Properties/Properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Tags/Tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Units/Units.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/Categories/Categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/Products/Products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Pages/StockOffice/StockOffice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Sidebar/Sidebar.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Sidebar/SidebarMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Sidebar/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/Topbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/Topbar.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarAddToCart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarDropdown.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarMail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarNotification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarSearchModal.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/language.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/language.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/translation/conversion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/raw/arab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/raw/chenese.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/raw/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/raw/ital.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/conversion/raw/span.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/entries/ar_SA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/entries/es_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/entries/fr_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/entries/it_IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/entries/zh-Hans-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/translation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/ar_SA.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/translation/locales/en_US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/es_ES.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/fr_FR.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/it_IT.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation/locales/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/languageSwitcher/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/languageSwitcher/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="27SSvjVXXnsKHGAvzHE8RKXerR9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images/flag" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images/flag" />
+      <recent name="$PROJECT_DIR$/src/config/translation/locales" />
+      <recent name="$PROJECT_DIR$/src/config/translation/entries" />
+      <recent name="$PROJECT_DIR$/src/containers/__custom/Pages" />
+      <recent name="$PROJECT_DIR$/src/containers/__custom" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -38,11 +112,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649312226325</updated>
-      <workItem from="1649312227431" duration="3756000" />
+      <workItem from="1649312227431" duration="15579000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
