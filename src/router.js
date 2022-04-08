@@ -12,7 +12,6 @@ import { PUBLIC_ROUTE } from './route.constants';
 import Loader from '@iso/components/utility/loader';
 
 const Dashboard = lazy(() => import('./containers/Dashboard/Dashboard'));
-const DashboardCustom = lazy(() => import('./containers/__custom/Dashboard/Dashboard'));
 
 const publicRoutes = [
   {
@@ -90,9 +89,6 @@ export default function Routes() {
             ))}
             <PrivateRoute path="/dashboard">
               <Dashboard />
-            </PrivateRoute>
-            <PrivateRoute path="/custom">
-              <DashboardCustom />
             </PrivateRoute>
           </Switch>
         </Router>

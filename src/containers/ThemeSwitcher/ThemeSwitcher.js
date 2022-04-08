@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Actions from '@iso/redux/themeSwitcher/actions';
 import Switcher from '@iso/components/ThemeSwitcher/ThemeSwitcher';
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from '@iso/containers/LanguageSwitcher/LanguageSwitcher';
 import Themes from './config';
 import bucketSVG from '@iso/assets/images/bucket.svg';
 import IntlMessages from '@iso/components/utility/intlMessages';
@@ -46,18 +46,6 @@ export default function ThemeSwitcher() {
           selectedId={layoutTheme.themeName}
         />
         <LanguageSwitcher />
-      </div>
-
-      <div className="purchaseBtnWrapper">
-        <a
-          href="https://themeforest.net/item/isomorphic-react-redux-admin-dashboard/20262330?ref=redqteam"
-          className="purchaseBtn"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styleButton}
-        >
-          <IntlMessages id="themeSwitcher.purchase" />
-        </a>
       </div>
 
       <button

@@ -4,10 +4,10 @@ import { useDispatch } from 'react-redux';
 import Input from '@iso/components/uielements/input';
 import Checkbox from '@iso/components/uielements/checkbox';
 import Button from '@iso/components/uielements/button';
-import FirebaseSignUpForm from '../../FirebaseForm/FirebaseForm';
+import FirebaseSignUpForm from '@iso/containers/FirebaseForm/FirebaseForm';
 import authAction from '@iso/redux/auth/actions';
 import appActions from '@iso/redux/app/actions';
-import Auth0 from '../../Authentication/Auth0/Auth0';
+import Auth0 from '@iso/containers/Authentication/Auth0/Auth0';
 import IntlMessages from '@iso/components/utility/intlMessages';
 import SignUpStyleWrapper from './SignUp.styles';
 

@@ -5,8 +5,8 @@ import useWindowSize from '@iso/lib/hooks/useWindowSize';
 import appActions from '@iso/redux/app/actions';
 import ThemeSwitcher from '@iso/containers/ThemeSwitcher/ThemeSwitcher';
 import siteConfig from '@iso/config/site.config';
-import Sidebar from '../Sidebar/Sidebar';
-import Topbar from '../Topbar/Topbar';
+import Sidebar from '@iso/containers/Sidebar/Sidebar';
+import Topbar from '@iso/containers/Topbar/Topbar';
 import DashboardRoutes from './DashboardRoutes';
 
 import { DashboardContainer, DashboardGlobalStyles } from './Dashboard.styles';
