@@ -11,7 +11,5 @@ export const PUBLIC_ROUTE = {
 
 export const PRIVATE_ROUTE = {
 	DASHBOARD: '/',
-	BACK_TO_TOP: '/backToTop',
-	MENU: '/menu',
 	PROFILE: '/my-profile',
 };

@@ -37,12 +37,8 @@ const routes = [
 		component: lazy(() => import('@iso/containers/Profile/Profile')),
 	},
 	{
-		path: 'backToTop',
-		component: lazy(() => import('@iso/containers/Navigation/BackToTop')),
-	},
-	{
-		path: 'menu',
-		component: lazy(() => import('@iso/containers/Navigation/NavigationMenu')),
+		path: 'profile-settings',
+		component: lazy(() => import('@iso/containers/Profile/Settings')),
 	},
 	{
 		path: 'blank_page',

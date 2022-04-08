@@ -2,364 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe12316-0fd1-443f-baeb-a62d35fa5868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/flag/ru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/site-logo/icon-orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/site-logo/logo-orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Profile/Settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/CodeMirror/CodeMirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/CodeMirror/CodeMirror.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/CodeMirror/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/Dropzone/Dropzone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/Dropzone/Dropzone.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/ReactDates/ReactDates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/ReactDates/ReactDates.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/ReactDates/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdvancedUI/Uppy/Uppy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Box/DemoBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Box/GridLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Box/box.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Box/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Box/helperfunc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Calendar/Calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Calendar/Calendar.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Calendar/DeleteButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Calendar/DemoEvents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Calendar/ModalEvents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Charts.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/FrappeChart/FrappeChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/FrappeChart/FrappeCharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/FrappeChart/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/GoogleChart/GoogleChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/GoogleChart/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Bar/Bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Bar/BarConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Bubble/Bubble.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Bubble/BubbleConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Doughnut/Doughnut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Doughnut/DoughnutConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/DynamicDoughnut/DynamicDoughnut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/HorizontalBar/HorizontalBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/HorizontalBar/HorizontalConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Line/Line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Line/LineConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Mix/Mix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Mix/MixConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Pie/Pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Pie/PieConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Polar/Polar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Polar/PolarConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Radar/Radar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/Radar/RadarConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/RandomizedLine/RandomizedLine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/Components/RandomizedLine/RandomizedLineConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactChart2/ReactChart2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactTrend/ReactTrend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactTrend/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/AnimatedSunburst.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/AreaChartElevated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/BasicSunburst.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CandleStick/CandleStick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CandleStick/CandleStick.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CandleStick/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CircularGridLines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/ClusteredStackedBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/ComplexChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CustomRadius.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/CustomScales.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/DynamicCrosshairScatterplot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/DynamicProgrammaticRightedgehints.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/DynamicTreeMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/LineMark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/LineSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/SimpleDonutChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/SimpleRadialChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/SimpleTreeMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/StackedHorizontalBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/StreamGraph.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/Charts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/ReactVis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/ReactVis/largeData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/BiaxialBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/CustomActiveShapePieChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/CustomShapeBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/CustomizedDotLineChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/LegendEffectOpacity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/LineBarAreaComposedChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/MixBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/SimpleAreaChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/SimpleBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/SimpleLineCharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/SimpleRadialBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/SpecifiedDomainRadarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/StackedAreaChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Charts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/Recharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/Recharts/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/eCharts/DynamicChartComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/eCharts/configs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/eCharts/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Charts/eCharts/eCharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/AddNewUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/Chat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/ChatRooms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/ComposeMessage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/DemoDataImporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/DesktopView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/Messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/Messages.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/MobileView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Chat/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Contacts/Contacts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Contacts/Contacts.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Contacts/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utility/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utility/logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/site.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Dashboard/DashboardRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Dashboard/DashboardRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/Algolia.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/Content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/ContentElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/DesktopView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/Hit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/InstantSearch.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/InstantSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Algolia/MobileView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Card/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Card/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Cart/Cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Cart/CartTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Cart/CartTable.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Cart/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/BillingForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/Checkout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/Checkout.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/InputBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/OrderInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Ecommerce/Checkout/SingleOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Alert/Alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Message/Message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Message/Message.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Modal/Modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Modal/Modal.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Notification/Notification.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Notification/Notification.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Popconfirm/Popconfirm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Popconfirm/Popconfirm.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Progress/Progress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Spin/Spin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Feedback/Spin/Spin.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FirestoreCRUD/Article/Article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FirestoreCRUD/Article/Article.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FirestoreCRUD/Investor/Investor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FirestoreCRUD/Investor/Investor.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/AutoComplete/AutoComplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Button/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Checkbox/Checkbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Editor/Editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Forms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/FormsWithValidation/FormValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/FormsWithValidation/FormsWithValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Input/Input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/InputNumber/InputNumber.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/LaddaButton/LaddaButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/LaddaButton/laddaButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Mention/Mention.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Progress/Progress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Radiobox/Radiobox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Rating/Rating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Select/Select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Slider/Slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/StepperForms/StepperForms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/StepperForms/StepperForms.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Tab/Tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Transfer/Transfer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/TreeSelect/TreeSelect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Forms/Upload/Upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/GithubSearch/GithubSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/GithubSearch/GithubSearchResult.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/GithubSearch/GithubSearchResult.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/EditInvoice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/Invoice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/Invoice.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/Invoices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/SingleInvoice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/SingleInvoice.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/ViewInvoice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Invoice/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/LanguageSwitcher/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/LanguageSwitcher/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/DesktopView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/Mail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/Mail.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/MailDrawer.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/MobileView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/TabView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Mail/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/GoogleMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/Maps/Basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/Maps/BasicMarker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/Maps/Maps.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/Marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/GoogleMap/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/Leaflet/Leaflet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/Leaflet/LeafletMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/Leaflet/LeafletMap.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Map/Leaflet/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Note/Note.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Note/Note.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Note/NoteList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Note/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pages/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/SignIn/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pages/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/GettingStartedQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/MultipleQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Question.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quizes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/SingleQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/SingleQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/AppLayout/AppLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/AppLayout/AppLayout.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/Board.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/Board.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardCreateOrUpdate/BoardCreateOrUpdate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardCreateOrUpdate/BoardCreateOrUpdate.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardLayout/BoardLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardLayout/BoardLayout.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardList/BoardList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardList/BoardList.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardList/BoardListCard/BoardListCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardList/BoardListCard/BoardListCard.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardNotFound/BoardNotFound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Board/BoardNotFound/NoBoardFounds.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/BoardLayout/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Column/Column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Column/Column.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Column/ColumnCreateOrUpdate/ColumnCreateOrUpdate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Column/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Column/style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/Task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/Task.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCard/TaskCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCard/TaskCard.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCreateOrUpdate/CreateTaskHeader/CreateTaskHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCreateOrUpdate/RenderCreateTaskForm/RenderCreateTaskForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCreateOrUpdate/TaskCreateOrUpdate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskCreateOrUpdate/TaskCreateOrUpdate.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskDetails/TaskDetailsHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskDetails/TaskDetials.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskDetials.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskList/TaskList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/Task/TaskList/TaskList.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/TaskList/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/TaskList/style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/rootDrawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ScrumBoard/rootModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Shuffle/Shuffle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Shuffle/Shuffle.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Shuffle/ShuffleList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Shuffle/Toggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Shuffle/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Sidebar/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Sidebar/options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/AntTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/AntTables.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/Demo.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/CustomizedView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/EditView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/FilterView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/GroupView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/SimpleView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/SortView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/TableViews/TableViews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/AntTables/configs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tables/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ThemeSwitcher/ThemeSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ThemeSwitcher/ThemeSwitcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Todo/Todo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Todo/Todo.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Todo/TodoList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Todo/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Badge/Badge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Badge/Badge.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Breadcrumb/Breadcrumb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Breadcrumb/Breadcrumb.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Card/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Card/Card.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Carousel/Carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Carousel/Carousel.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Carousel/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Collapse/Collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Dropdown/Dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Pagination/Pagination.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Popover/Popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Popover/Popover.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Rating/Rating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Rating/Rating.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/SwiperSlider/SwiperSlider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/SwiperSlider/SwiperSlider.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/SwiperSlider/slider.data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tag/Tag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tag/Tag.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Timeline/Timeline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tooltip/Tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/AsyncTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/BasicControlledTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/BasicTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/DraggableTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/LineTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/SearchableTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/UIElements/Tree/Tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Card/CardWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Card/CardWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Progress/ProgressCircle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Progress/ProgressSingle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Progress/ProgressWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Progress/ProgressWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Report/ReportWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Report/ReportWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Sale/SaleWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Sale/SaleWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/SocialWidget/SocialProfileIcon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/SocialWidget/SocialWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/SocialWidget/SocialWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Sticker/StickerWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Sticker/StickerWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/WidgetBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/WidgetColumn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/Widgets.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/WidgetsHolder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/WidgetsWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/vCard/vCardWidget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Widgets/vCard/vCardWidget.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/YoutubeSearch/YoutubeSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Authentication/Auth0/Auth0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Authentication/Auth0/Auth0Callback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Dashboard/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Dashboard/Dashboard.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Dashboard/DashboardRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Properties/Properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/Catalog/Properties/Properties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Tags/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/Catalog/Tags/Tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/Catalog/Units/Units.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/Catalog/Units/Units.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/Categories/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/Categories/Categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/Products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/Products/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Pages/StockOffice/StockOffice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Pages/StockOffice/StockOffice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Sidebar/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Sidebar/Sidebar.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Sidebar/SidebarMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Sidebar/options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/Topbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/Topbar.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarAddToCart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarDropdown.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarMail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarMessage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarNotification.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarSearchModal.styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__custom/Topbar/TopbarUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/languageSwitcher/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/languageSwitcher/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/LanguageSwitcher/WithModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/Affix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/BackToTop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/BackToTop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/NavigationMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarAddToCart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarMail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarMessage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Topbar/TopbarUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route.constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route.constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -382,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images/flag" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images/site-logo" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -394,11 +55,11 @@
       <recent name="$PROJECT_DIR$/src/containers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images/site-logo" />
       <recent name="$PROJECT_DIR$/src/assets/images/flag" />
       <recent name="$PROJECT_DIR$/src/containers" />
       <recent name="$PROJECT_DIR$/src/config/translation/locales" />
       <recent name="$PROJECT_DIR$/src/config/translation/entries" />
-      <recent name="$PROJECT_DIR$/src/containers/__custom/Pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649312226325</updated>
       <workItem from="1649312227431" duration="20218000" />
-      <workItem from="1649391508591" duration="3941000" />
+      <workItem from="1649391508591" duration="8204000" />
     </task>
     <servers />
   </component>
