@@ -2,25 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe12316-0fd1-443f-baeb-a62d35fa5868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/site-logo/icon-orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/site-logo/logo-orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Profile/Settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utility/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utility/logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/site.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Dashboard/DashboardRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Dashboard/DashboardRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/LanguageSwitcher/WithModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/Affix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/BackToTop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/BackToTop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Navigation/NavigationMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarAddToCart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarMail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarMessage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/TopbarUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Topbar/TopbarUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/route.constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route.constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/box/DemoBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/box/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/box/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/calendar/DemoEvents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/calendar/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/calendar/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/card/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/card/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/card/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/card/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chat/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chat/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chat/sagas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/contacts/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/contacts/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/contacts/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/contacts/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ecommerce/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ecommerce/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ecommerce/fake.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ecommerce/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ecommerce/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/githubSearch/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/githubSearch/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/githubSearch/sagas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/invoice/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/invoice/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/invoice/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/invoice/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mail/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mail/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mail/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mail/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mail/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/notes/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/notes/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/notes/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/notes/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/quiz/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/quiz/fakeQuestion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/quiz/fakeQuizes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/quiz/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/quiz/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todos/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todos/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todos/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todos/saga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/youtubeSearch/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/youtubeSearch/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/youtubeSearch/sagas.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +76,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images/site-logo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -86,6 +119,7 @@
       <updated>1649312226325</updated>
       <workItem from="1649312227431" duration="20218000" />
       <workItem from="1649391508591" duration="8204000" />
+      <workItem from="1649692347798" duration="1276000" />
     </task>
     <servers />
   </component>
