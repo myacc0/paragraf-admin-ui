@@ -16,6 +16,8 @@ module.exports = function(config, env) {
         '@iso/components': path.resolve(__dirname, 'src/components'),
         '@iso/config': path.resolve(__dirname, 'src/config'),
         '@iso/containers': path.resolve(__dirname, 'src/containers'),
+        '@iso/pages': path.resolve(__dirname, 'src/pages'),
+        '@iso/pages_public': path.resolve(__dirname, 'src/pages_public'),
         '@iso/redux': path.resolve(__dirname, 'src/redux'),
         '@iso/lib': path.resolve(__dirname, 'src/library'),
         '@iso/ui': path.resolve(__dirname, 'src/UI'),

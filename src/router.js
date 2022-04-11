@@ -11,40 +11,40 @@ import ErrorBoundary from './ErrorBoundary';
 import { PUBLIC_ROUTE } from './route.constants';
 import Loader from '@iso/components/utility/loader';
 
-const Dashboard = lazy(() => import('./containers/Dashboard/Dashboard'));
+const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 
 const publicRoutes = [
   {
     path: PUBLIC_ROUTE.LANDING,
     exact: true,
-    component: lazy(() => import('@iso/containers/Pages/SignIn/SignIn')),
+    component: lazy(() => import('@iso/pages_public/SignIn/SignIn')),
   },
   {
     path: PUBLIC_ROUTE.PAGE_404,
-    component: lazy(() => import('@iso/containers/Pages/404/404')),
+    component: lazy(() => import('@iso/pages_public/404/404')),
   },
   {
     path: PUBLIC_ROUTE.PAGE_500,
-    component: lazy(() => import('@iso/containers/Pages/500/500')),
+    component: lazy(() => import('@iso/pages_public/500/500')),
   },
   {
     path: PUBLIC_ROUTE.SIGN_IN,
-    component: lazy(() => import('@iso/containers/Pages/SignIn/SignIn')),
+    component: lazy(() => import('@iso/pages_public/SignIn/SignIn')),
   },
   {
     path: PUBLIC_ROUTE.SIGN_UP,
-    component: lazy(() => import('@iso/containers/Pages/SignUp/SignUp')),
+    component: lazy(() => import('@iso/pages_public/SignUp/SignUp')),
   },
   {
     path: PUBLIC_ROUTE.FORGET_PASSWORD,
     component: lazy(() =>
-      import('@iso/containers/Pages/ForgotPassword/ForgotPassword')
+      import('@iso/pages_public/ForgotPassword/ForgotPassword')
     ),
   },
   {
     path: PUBLIC_ROUTE.RESET_PASSWORD,
     component: lazy(() =>
-      import('@iso/containers/Pages/ResetPassword/ResetPassword')
+      import('@iso/pages_public/ResetPassword/ResetPassword')
     ),
   },
   {
