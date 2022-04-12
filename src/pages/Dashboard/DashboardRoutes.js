@@ -10,35 +10,35 @@ const routes = [
 	},
 	{
 		path: 'products',
-		component: lazy(() => import('@iso/containers/Pages/Products/Products')),
+		component: lazy(() => import('@iso/pages/Products/Products')),
 	},
 	{
 		path: 'categories',
-		component: lazy(() => import('@iso/containers/Pages/Categories/Categories')),
+		component: lazy(() => import('@iso/pages/Categories/Categories')),
 	},
 	{
 		path: 'stock-office',
-		component: lazy(() => import('@iso/containers/Pages/StockOffice/StockOffice')),
+		component: lazy(() => import('@iso/pages/StockOffice/StockOffice')),
 	},
 	{
 		path: 'tags',
-		component: lazy(() => import('@iso/containers/Pages/Catalog/Tags/Tags')),
+		component: lazy(() => import('@iso/pages/Catalog/Tags/Tags')),
 	},
 	{
 		path: 'properties',
-		component: lazy(() => import('@iso/containers/Pages/Catalog/Properties/Properties')),
+		component: lazy(() => import('@iso/pages/Catalog/Properties/Properties')),
 	},
 	{
 		path: 'units',
-		component: lazy(() => import('@iso/containers/Pages/Catalog/Units/Units')),
+		component: lazy(() => import('@iso/pages/Catalog/Units/Units')),
 	},
 	{
 		path: 'my-profile',
-		component: lazy(() => import('@iso/containers/Profile/Profile')),
+		component: lazy(() => import('@iso/pages/Profile/Profile')),
 	},
 	{
 		path: 'profile-settings',
-		component: lazy(() => import('@iso/containers/Profile/Settings')),
+		component: lazy(() => import('@iso/pages/Profile/Settings')),
 	},
 	{
 		path: 'blank_page',
