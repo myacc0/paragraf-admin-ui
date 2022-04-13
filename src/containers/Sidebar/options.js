@@ -2,22 +2,22 @@ const options = [
 	{
 		key: 'products',
 		label: 'sidebar.products',
-		leftIcon: 'ion-android-mail',
+		leftIcon: 'ion-cube',
 	},
 	{
 		key: 'categories',
 		label: 'sidebar.categories',
-		leftIcon: 'ion-chatbubbles',
+		leftIcon: 'ion-folder',
 	},
 	{
 		key: 'stock-office',
 		label: 'sidebar.stockoffice',
-		leftIcon: 'ion-chatbubbles',
+		leftIcon: 'ion-ios-home',
 	},
 	{
 		key: 'catalog',
 		label: 'sidebar.catalog',
-		leftIcon: 'ion-bag',
+		leftIcon: 'ion-social-buffer',
 		children: [
 			{
 				key: 'tags',

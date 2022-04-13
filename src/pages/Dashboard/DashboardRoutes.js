@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, useRouteMatch, Switch } from 'react-router-dom';
 import Loader from '@iso/components/utility/loader';
+import { routeList as CategoryRoutes } from '@iso/pages/Categories/CategoryRoutes';
 
 const routes = [
 	{
@@ -8,13 +9,10 @@ const routes = [
 		component: lazy(() => import('@iso/containers/BlankPage')),
 		exact: true,
 	},
+	...CategoryRoutes,
 	{
 		path: 'products',
 		component: lazy(() => import('@iso/pages/Products/Products')),
-	},
-	{
-		path: 'categories',
-		component: lazy(() => import('@iso/pages/Categories/Categories')),
 	},
 	{
 		path: 'stock-office',
@@ -45,6 +43,8 @@ const routes = [
 		component: lazy(() => import('@iso/containers/BlankPage')),
 	},
 ];
+
+// routes.concat(CategoryRoutes);
 
 export default function AppRouter() {
 	const { url } = useRouteMatch();
