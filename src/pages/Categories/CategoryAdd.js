@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import LayoutWrapper from '@iso/components/utility/layoutWrapper';
 import PageHeader from '@iso/components/utility/pageHeader';
 import IntlMessages from '@iso/components/utility/intlMessages';
+import message from '@iso/components/Feedback/Message';
 import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import { Box } from './Categories.styles';
 import { Button, Form, Input, Select } from 'antd';
@@ -10,7 +11,6 @@ import { Button, Form, Input, Select } from 'antd';
 export default function CategoryAdd() {
     let history = useHistory();
     const [categories, setCategories] = useState([]);
-    const [selectedCat, setSelectedCat] = useState(null);
 
     useEffect(() => {
         getCats({page: 1, size: 100});
@@ -32,23 +32,17 @@ export default function CategoryAdd() {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(params)
         })
-            .then(res => res.json())
-            .then(data => {
+            .then(async res => {
+                const data = await res.json();
+                const error = `${data.status} | ${data.error} | ${data.message || ''}`;
+                if (!res.ok) return Promise.reject(error);
+                message.success(`Категория "${data.name}" добавлена!`, 5);
                 history.push(routeConstants['list']);
-            });
+            })
+            .catch(error => message.error(`Ошибка: ${error}`));
     };
 
-    function onChange(value) {
-        console.log(`selected ${value}`);
-        setSelectedCat(value);
-    }
-
-    function onSearch(val) {
-        console.log('search:', val);
-    }
-
     const onFinish = (values) => {
-        values = {...values, parent: selectedCat};
         console.log(values);
         saveCategory(values);
     };
@@ -86,14 +80,11 @@ export default function CategoryAdd() {
                         <Input />
                     </Form.Item>
 
-                    <Form.Item label={<IntlMessages id="page.categories.form.label.parent"/>}>
+                    <Form.Item name="parent" label={<IntlMessages id="page.categories.form.label.parent"/>}>
                         <Select
                             showSearch
-                            name="parent"
                             placeholder="Select a parent category"
                             optionFilterProp="children"
-                            onChange={onChange}
-                            onSearch={onSearch}
                             filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
                         >
                             {categories.map(c => (<Select.Option key={c.key} value={c.id}>{c.name}</Select.Option>))}

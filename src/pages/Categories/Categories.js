@@ -4,9 +4,24 @@ import LayoutWrapper from '@iso/components/utility/layoutWrapper';
 import PageHeader from '@iso/components/utility/pageHeader';
 import IntlMessages from '@iso/components/utility/intlMessages';
 import HelperText from '@iso/components/utility/helper-text';
+import Modals from '@iso/components/Feedback/Modal';
+import message from '@iso/components/Feedback/Message';
 import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import CardWrapper, { Box } from './Categories.styles';
 import { Button, Table } from 'antd';
+
+const confirm = Modals.confirm;
+
+function showConfirm(modalContent, okHandler) {
+    confirm({
+        title: 'Вы действительно хотите удалить эту категорию',
+        content: modalContent,
+        onOk: okHandler,
+        onCancel() {},
+        okText: 'Удалить',
+        cancelText: 'Отмена',
+    });
+}
 
 export default function Categories() {
     const [categories, setCategories] = useState([]);
@@ -25,20 +40,20 @@ export default function Categories() {
             title: <IntlMessages id="page.categories.table.column.name"/>,
             dataIndex: 'name',
             rowKey: 'name',
-            width: '25%',
+            width: '20%',
             render: (text) => <span>{text}</span>,
         },
         {
             title: <IntlMessages id="page.categories.table.column.slug"/>,
             dataIndex: 'slug',
             rowKey: 'slug',
-            width: '22%',
+            width: '20%',
             render: (text) => <span>{text}</span>,
         },
         {
             title: <IntlMessages id="page.categories.table.column.description"/>,
-            dataIndex: 'desc',
-            rowKey: 'desc',
+            dataIndex: 'description',
+            rowKey: 'description',
             width: '35%',
             render: (text) => <span>{text}</span>,
         },
@@ -46,36 +61,43 @@ export default function Categories() {
             title: <IntlMessages id="page.categories.table.column.parent"/>,
             dataIndex: 'parent',
             rowKey: 'parent',
-            width: '13%',
+            width: '10%',
             render: (text) => <span>{text}</span>,
         },
-        // {
-        //     title: '',
-        //     dataIndex: 'view',
-        //     rowKey: 'view',
-        //     width: '10%',
-        //     render: (text, invoice) => (
-        //         <div className="isoInvoiceBtnView">
-        //             <Link to={`${match.path}/${invoice.id}`}>
-        //                 <Button color="primary" className="invoiceViewBtn">
-        //                     View
-        //                 </Button>
-        //             </Link>{' '}
-        //             <Button
-        //                 className="invoiceDltBtn"
-        //                 // icon="delete"
-        //                 onClick={() => {
-        //                     notification('error', '1 invoice deleted');
-        //                     dispatch(deleteInvoice([invoice.key]));
-        //                     setSelected([]);
-        //                 }}
-        //             >
-        //                 <i className="ion-android-delete" />
-        //             </Button>
-        //         </div>
-        //     ),
-        // },
+        {
+            title: '',
+            dataIndex: 'actions',
+            rowKey: 'actions',
+            width: '10%',
+            render: (text, category) => (
+                <div className="isoInvoiceBtnView">
+                    <Link to={`${routeConstants['edit']}/${category.id}`}>
+                        <Button color="primary">
+                            <i className="ion-edit" />
+                        </Button>
+                    </Link>
+                    <Button
+                        onClick={() => {
+                            showConfirm(
+                                `Будет удалена категория "${category.name}[ID: ${category.id}]"`,
+                                () => onDeleteModalConfirm(category.id));
+                        }}
+                    >
+                        <i className="ion-trash-a" />
+                    </Button>
+                </div>
+            ),
+        },
     ];
+
+    const onDeleteModalConfirm = (id) => {
+        fetch(`http://localhost:8080/admin-api/categories/${id}`, { method: 'DELETE' })
+            .then(() => {
+                message.success("Категория успешно удалена!");
+                getCats({...pagination});
+            })
+            .catch(error => message.error(`Ошибка: ${error}`));
+    };
 
     const handleTableChange = (pagination) => {
         getCats({...pagination});
@@ -116,13 +138,13 @@ export default function Categories() {
             <Box>
                 <div className="isoInvoiceTableBtn">
                     <Link to={routeConstants['add']}>
-                        <Button type="primary" className="mateAddInvoiceBtn">
+                        <Button type="primary">
                             <IntlMessages id="page.categories.add"/>
                         </Button>
                     </Link>
                 </div>
 
-                <CardWrapper title="Categories">
+                <CardWrapper>
                     {categories.length === 0 ? (
                         <HelperText text={<IntlMessages id="page.nodata"/>} />
                     ) : (

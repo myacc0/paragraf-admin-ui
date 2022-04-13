@@ -592,6 +592,7 @@
   "Swiper.custom.buttonNavTitle": "Custom Naviation",
   "page.nodata": "Нет данных",
   "page.back": "Назад",
+  "page.cancel": "Отмена",
   "page.categories": "Категории",
   "page.categories.add": "Добавить категорию",
   "page.categories.edit": "Изменить категорию",
@@ -604,5 +605,7 @@
   "page.categories.form.label.name": "Наименование",
   "page.categories.form.label.slug": "Слаг(Slug)",
   "page.categories.form.label.description": "Описание",
-  "page.categories.form.label.parent": "Родительская категория"
+  "page.categories.form.label.parent": "Родительская категория",
+  "page.categories.modal.delete.title": "Хотите удалить эту категорию",
+  "page.categories.modal.delete.text": "Категория будет удалена:"
 }

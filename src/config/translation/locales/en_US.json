@@ -592,6 +592,7 @@
   "Swiper.custom.buttonNavTitle": "Custom Naviation",
   "page.nodata": "No data",
   "page.back": "Back",
+  "page.cancel": "Cancel",
   "page.categories": "Categories",
   "page.categories.add": "Add category",
   "page.categories.edit": "Edit category",
@@ -604,5 +605,7 @@
   "page.categories.form.label.name": "Name",
   "page.categories.form.label.slug": "Slug",
   "page.categories.form.label.description": "Description",
-  "page.categories.form.label.parent": "Parent"
+  "page.categories.form.label.parent": "Parent",
+  "page.categories.modal.delete.title": "Want to delete this category",
+  "page.categories.modal.delete.text": "Category will be delete:"
 }

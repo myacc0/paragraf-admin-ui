@@ -16,7 +16,7 @@ const routeList = [
         component: lazy(() => import('@iso/pages/Categories/CategoryAdd')),
     },
     {
-        path: 'categories-edit',
+        path: 'categories-edit/:id',
         component: lazy(() => import('@iso/pages/Categories/CategoryEdit')),
     }
 ];
