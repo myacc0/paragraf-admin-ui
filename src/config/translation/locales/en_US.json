@@ -607,5 +607,16 @@
   "page.categories.form.label.description": "Description",
   "page.categories.form.label.parent": "Parent",
   "page.categories.modal.delete.title": "Want to delete this category",
-  "page.categories.modal.delete.text": "Category will be delete:"
+  "page.categories.modal.delete.text": "Category will be delete:",
+  "page.tags": "Tags",
+  "page.tags.add": "Add tag",
+  "page.tags.edit": "Edit tag",
+  "page.tags.remove": "Remove tag",
+  "page.tags.table.column.name": "Name",
+  "page.tags.table.column.slug": "Slug",
+  "page.tags.form.save": "Save",
+  "page.tags.form.label.name": "Name",
+  "page.tags.form.label.slug": "Slug",
+  "page.tags.modal.delete.title": "Want to delete this tag",
+  "page.tags.modal.delete.text": "Tag will be delete:"
 }
