@@ -6,6 +6,7 @@ import IntlMessages from '@iso/components/utility/intlMessages';
 import HelperText from '@iso/components/utility/helper-text';
 import Modals from '@iso/components/Feedback/Modal';
 import message from '@iso/components/Feedback/Message';
+import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import CardWrapper, { Box } from './Categories.styles';
 import { Button, Table } from 'antd';
@@ -91,7 +92,7 @@ export default function Categories() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        fetch(`http://localhost:8080/admin-api/categories/${id}`, { method: 'DELETE' })
+        CustomHttpClient.delete(`http://localhost:8080/admin-api/categories/${id}`)
             .then(() => {
                 message.success("Категория успешно удалена!");
                 getCats({...pagination});
@@ -105,8 +106,7 @@ export default function Categories() {
 
     const getCats = (params) => {
         setLoading(true);
-        fetch(`http://localhost:8080/admin-api/categories?page=${params.current}&size=${params.pageSize}`)
-            .then(res => res.json())
+        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

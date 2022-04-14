@@ -8,6 +8,7 @@ import Modals from '@iso/components/Feedback/Modal';
 import message from '@iso/components/Feedback/Message';
 import { routeConstants } from '@iso/pages/Catalog/Tags/TagRoutes';
 import CardWrapper, { Box } from '@iso/pages/Categories/Categories.styles';
+import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { Button, Table } from 'antd';
 
 const confirm = Modals.confirm;
@@ -77,7 +78,7 @@ export default function Tags() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        fetch(`http://localhost:8080/admin-api/catalog/tags/${id}`, { method: 'DELETE' })
+        CustomHttpClient.delete(`http://localhost:8080/admin-api/catalog/tags/${id}`)
             .then(() => {
                 message.success("Тег успешно удален!");
                 getTags({...pagination});
@@ -91,8 +92,7 @@ export default function Tags() {
 
     const getTags = (params) => {
         setLoading(true);
-        fetch(`http://localhost:8080/admin-api/catalog/tags?page=${params.current}&size=${params.pageSize}`)
-            .then(res => res.json())
+        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/tags?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,
@@ -101,7 +101,8 @@ export default function Tags() {
                 });
                 setTags(data.list.map(tag => ({...tag, key: tag.id})));
                 setLoading(false);
-            });
+            })
+            .catch(error => message.error(`Ошибка: ${error}`));
     };
 
     useEffect(() => {

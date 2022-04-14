@@ -4,6 +4,7 @@ import LayoutWrapper from '@iso/components/utility/layoutWrapper';
 import PageHeader from '@iso/components/utility/pageHeader';
 import IntlMessages from '@iso/components/utility/intlMessages';
 import message from '@iso/components/Feedback/Message';
+import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import { Box } from './Categories.styles';
 import { Button, Form, Input, Select } from 'antd';
@@ -19,23 +20,16 @@ export default function CategoryAdd() {
     const getCats = (params) => {
         let queryParams = `?page=${params.page}&size=${params.size}`;
         if (params.name != null) queryParams += `&name=${params.name}`;
-        fetch(`http://localhost:8080/admin-api/categories?${queryParams}`)
-            .then(res => res.json())
+        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?${queryParams}`)
             .then(data => {
                 setCategories(data.list.map(cat => ({ key: `cat${cat.id}`, id: cat.id, name: cat.name })));
-            });
+            })
+            .catch(error => message.error(`Ошибка: ${error}`));
     };
 
     const saveCategory = (params) => {
-        fetch('http://localhost:8080/admin-api/categories', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(params)
-        })
-            .then(async res => {
-                const data = await res.json();
-                const error = `${data.status} | ${data.error} | ${data.message || ''}`;
-                if (!res.ok) return Promise.reject(error);
+        CustomHttpClient.post('http://localhost:8080/admin-api/categories', params)
+            .then(data => {
                 message.success(`Категория "${data.name}" добавлена!`, 5);
                 history.push(routeConstants['list']);
             })
