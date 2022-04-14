@@ -618,5 +618,14 @@
   "page.tags.form.label.name": "Name",
   "page.tags.form.label.slug": "Slug",
   "page.tags.modal.delete.title": "Want to delete this tag",
-  "page.tags.modal.delete.text": "Tag will be delete:"
+  "page.tags.modal.delete.text": "Tag will be delete:",
+  "page.units": "Units",
+  "page.units.add": "Add unit",
+  "page.units.edit": "Edit unit",
+  "page.units.remove": "Remove unit",
+  "page.units.table.column.name": "Name",
+  "page.units.form.save": "Save",
+  "page.units.form.label.name": "Name",
+  "page.units.modal.delete.title": "Want to delete this unit",
+  "page.units.modal.delete.text": "Unit will be delete:"
 }

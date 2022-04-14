@@ -3,6 +3,7 @@ import { Route, useRouteMatch, Switch } from 'react-router-dom';
 import Loader from '@iso/components/utility/loader';
 import { routeList as CategoryRoutes } from '@iso/pages/Categories/CategoryRoutes';
 import { routeList as TagRoutes } from '@iso/pages/Catalog/Tags/TagRoutes';
+import { routeList as UnitRoutes } from '@iso/pages/Catalog/Units/UnitRoutes';
 
 const routes = [
 	{
@@ -12,6 +13,7 @@ const routes = [
 	},
 	...CategoryRoutes,
 	...TagRoutes,
+	...UnitRoutes,
 	{
 		path: 'products',
 		component: lazy(() => import('@iso/pages/Products/Products')),

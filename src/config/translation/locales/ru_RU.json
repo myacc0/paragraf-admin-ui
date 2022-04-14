@@ -618,5 +618,14 @@
   "page.tags.form.label.name": "Наименование",
   "page.tags.form.label.slug": "Слаг(Slug)",
   "page.tags.modal.delete.title": "Хотите удалить этот тег",
-  "page.tags.modal.delete.text": "Тег будет удален:"
+  "page.tags.modal.delete.text": "Тег будет удален:",
+  "page.units": "Единицы измерения",
+  "page.units.add": "Добавить единицу измерения",
+  "page.units.edit": "Изменить единицу измерения",
+  "page.units.remove": "Удалить единицу измерения",
+  "page.units.table.column.name": "Наименование",
+  "page.units.form.save": "Сохранить",
+  "page.units.form.label.name": "Наименование",
+  "page.units.modal.delete.title": "Хотите удалить эту единицу измерения",
+  "page.units.modal.delete.text": "Единица измерения будет удалена:"
 }

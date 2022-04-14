@@ -1,46 +1,21 @@
-import React, {useEffect, useState} from 'react';
-import {Link, useHistory, useParams} from 'react-router-dom';
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import LayoutWrapper from '@iso/components/utility/layoutWrapper';
 import PageHeader from '@iso/components/utility/pageHeader';
 import IntlMessages from '@iso/components/utility/intlMessages';
 import message from '@iso/components/Feedback/Message';
 import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { Box } from '@iso/pages/Categories/Categories.styles';
-import { routeConstants } from '@iso/pages/Catalog/Tags/TagRoutes';
+import { routeConstants } from '@iso/pages/Catalog/Units/UnitRoutes';
 import { Button, Form, Input } from 'antd';
 
-
-export default function TagEdit() {
+export default function UnitAdd() {
     let history = useHistory();
-    let { id } = useParams();
-    const form = Form.useForm()[0];
 
-    const [tag, setTag] = useState({});
-
-    useEffect(() => {
-        if (id) getTagById(id);
-    }, [id]);
-
-    useEffect(() => {
-        form.setFieldsValue(tag);
-    }, [tag, form]);
-
-    const getTagById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/tags/${id}`)
+    const saveUnits = (params) => {
+        CustomHttpClient.post('http://localhost:8080/admin-api/catalog/product-units', params)
             .then(data => {
-                setTag({
-                    name: data.name,
-                    slug: data.slug
-                });
-                console.log(data);
-            })
-            .catch(error => message.error(`Ошибка: ${error}`));
-    };
-
-    const saveTag = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/tags/${id}`, params)
-            .then(data => {
-                message.success(`Тег "${data.name}" изменен!`, 5);
+                message.success(`Единица измерения "${data.name}" добавлена!`, 5);
                 history.push(routeConstants['list']);
             })
             .catch(error => message.error(`Ошибка: ${error}`));
@@ -48,7 +23,7 @@ export default function TagEdit() {
 
     const onFinish = (values) => {
         console.log(values);
-        saveTag(values);
+        saveUnits(values);
     };
 
     const validateMessages = {
@@ -58,7 +33,7 @@ export default function TagEdit() {
     return (
         <LayoutWrapper>
             <PageHeader>
-                <IntlMessages id="page.tags.edit"/>
+                <IntlMessages id="page.units.add"/>
             </PageHeader>
             <Box>
                 <div className="isoInvoiceTableBtn">
@@ -69,29 +44,24 @@ export default function TagEdit() {
                     </Link>
                 </div>
 
-                <Form form={form}
-                      labelCol={{ span: 4 }}
+                <Form labelCol={{ span: 4 }}
                       wrapperCol={{ span: 14 }}
                       layout="horizontal"
-                      name="tag"
+                      name="units"
                       onFinish={onFinish}
                       validateMessages={validateMessages}
                 >
-                    <Form.Item name="name" label={<IntlMessages id="page.tags.form.label.name"/>} rules={[{ required: true }]}>
-                        <Input />
-                    </Form.Item>
-
-                    <Form.Item name="slug" label={<IntlMessages id="page.tags.form.label.slug"/>} rules={[{ required: true }]}>
+                    <Form.Item name="name" label={<IntlMessages id="page.units.form.label.name"/>} rules={[{ required: true }]}>
                         <Input />
                     </Form.Item>
 
                     <Form.Item wrapperCol={{ span: 4, offset: 10 }}>
                         <Button type="primary" htmlType="submit">
-                            <IntlMessages id="page.tags.form.save"/>
+                            <IntlMessages id="page.units.form.save"/>
                         </Button>
                     </Form.Item>
                 </Form>
             </Box>
         </LayoutWrapper>
-    )
+    );
 }
