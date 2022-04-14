@@ -627,5 +627,18 @@
   "page.units.form.save": "Сохранить",
   "page.units.form.label.name": "Наименование",
   "page.units.modal.delete.title": "Хотите удалить эту единицу измерения",
-  "page.units.modal.delete.text": "Единица измерения будет удалена:"
+  "page.units.modal.delete.text": "Единица измерения будет удалена:",
+  "page.properties": "Атрибуты",
+  "page.properties.add": "Добавить атрибут",
+  "page.properties.edit": "Изменить атрибут",
+  "page.properties.remove": "Удалить атрибут",
+  "page.properties.table.column.name": "Наименование",
+  "page.properties.table.column.slug": "Слаг(Slug)",
+  "page.properties.table.column.category": "Категория(принадлежит)",
+  "page.properties.form.save": "Сохранить",
+  "page.properties.form.label.name": "Наименование",
+  "page.properties.form.label.slug": "Слаг(Slug)",
+  "page.properties.form.label.category": "Категория(принадлежит)",
+  "page.properties.modal.delete.title": "Хотите удалить этот атрибут",
+  "page.properties.modal.delete.text": "Утрибут будет удален:"
 }

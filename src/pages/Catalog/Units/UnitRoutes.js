@@ -1,22 +1,22 @@
 import {lazy} from 'react';
 
 const routeConstants = {
-    list: '/dashboard/unit',
-    add: '/dashboard/unit-add',
-    edit: '/dashboard/unit-edit'
+    list: '/dashboard/units',
+    add: '/dashboard/units-add',
+    edit: '/dashboard/units-edit'
 };
 
 const routeList = [
     {
-        path: 'unit',
+        path: 'units',
         component: lazy(() => import('@iso/pages/Catalog/Units/Units')),
     },
     {
-        path: 'unit-add',
+        path: 'units-add',
         component: lazy(() => import('@iso/pages/Catalog/Units/UnitAdd')),
     },
     {
-        path: 'unit-edit/:id',
+        path: 'units-edit/:id',
         component: lazy(() => import('@iso/pages/Catalog/Units/UnitEdit')),
     }
 ];

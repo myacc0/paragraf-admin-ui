@@ -4,6 +4,7 @@ import Loader from '@iso/components/utility/loader';
 import { routeList as CategoryRoutes } from '@iso/pages/Categories/CategoryRoutes';
 import { routeList as TagRoutes } from '@iso/pages/Catalog/Tags/TagRoutes';
 import { routeList as UnitRoutes } from '@iso/pages/Catalog/Units/UnitRoutes';
+import { routeList as PropertyRoutes } from '@iso/pages/Catalog/Properties/PropertyRoutes';
 
 const routes = [
 	{
@@ -14,6 +15,7 @@ const routes = [
 	...CategoryRoutes,
 	...TagRoutes,
 	...UnitRoutes,
+	...PropertyRoutes,
 	{
 		path: 'products',
 		component: lazy(() => import('@iso/pages/Products/Products')),
@@ -21,14 +23,6 @@ const routes = [
 	{
 		path: 'stock-office',
 		component: lazy(() => import('@iso/pages/StockOffice/StockOffice')),
-	},
-	{
-		path: 'properties',
-		component: lazy(() => import('@iso/pages/Catalog/Properties/Properties')),
-	},
-	{
-		path: 'units',
-		component: lazy(() => import('@iso/pages/Catalog/Units/Units')),
 	},
 	{
 		path: 'my-profile',
