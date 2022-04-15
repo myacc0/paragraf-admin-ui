@@ -6,7 +6,7 @@ import IntlMessages from '@iso/components/utility/intlMessages';
 import message from '@iso/components/Feedback/Message';
 import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { Box } from '@iso/pages/Categories/Categories.styles';
-import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
+import { routeConstants } from '@iso/pages/Catalog/Properties/PropertyRoutes';
 import { Button, Form, Input, Select } from 'antd';
 
 export default function PropertyAdd() {
@@ -27,10 +27,10 @@ export default function PropertyAdd() {
             .catch(error => message.error(`Ошибка: ${error}`));
     };
 
-    const saveCategory = (params) => {
-        CustomHttpClient.post('http://localhost:8080/admin-api/categories', params)
+    const saveProperty = (params) => {
+        CustomHttpClient.post('http://localhost:8080/admin-api/catalog/properties', params)
             .then(data => {
-                message.success(`Категория "${data.name}" добавлена!`, 5);
+                message.success(`Атрибут "${data.name}" добавлен!`, 5);
                 history.push(routeConstants['list']);
             })
             .catch(error => message.error(`Ошибка: ${error}`));
@@ -38,7 +38,7 @@ export default function PropertyAdd() {
 
     const onFinish = (values) => {
         console.log(values);
-        saveCategory(values);
+        saveProperty(values);
     };
 
     const validateMessages = {
@@ -48,7 +48,7 @@ export default function PropertyAdd() {
     return (
         <LayoutWrapper>
             <PageHeader>
-                <IntlMessages id="page.categories.add"/>
+                <IntlMessages id="page.properties.add"/>
             </PageHeader>
             <Box>
                 <div className="isoInvoiceTableBtn">
@@ -62,22 +62,22 @@ export default function PropertyAdd() {
                 <Form labelCol={{ span: 4 }}
                       wrapperCol={{ span: 14 }}
                       layout="horizontal"
-                      name="category"
+                      name="property"
                       onFinish={onFinish}
                       validateMessages={validateMessages}
                 >
-                    <Form.Item name="name" label={<IntlMessages id="page.categories.form.label.name"/>} rules={[{ required: true }]}>
+                    <Form.Item name="name" label={<IntlMessages id="page.properties.form.label.name"/>} rules={[{ required: true }]}>
                         <Input />
                     </Form.Item>
 
-                    <Form.Item name="slug" label={<IntlMessages id="page.categories.form.label.slug"/>} rules={[{ required: true }]}>
+                    <Form.Item name="slug" label={<IntlMessages id="page.properties.form.label.slug"/>} rules={[{ required: true }]}>
                         <Input />
                     </Form.Item>
 
-                    <Form.Item name="parent" label={<IntlMessages id="page.categories.form.label.parent"/>}>
+                    <Form.Item name="categoryId" label={<IntlMessages id="page.properties.form.label.category"/>}>
                         <Select
                             showSearch
-                            placeholder="Select a parent category"
+                            placeholder="Select a category"
                             optionFilterProp="children"
                             filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
                         >
@@ -85,13 +85,9 @@ export default function PropertyAdd() {
                         </Select>
                     </Form.Item>
 
-                    <Form.Item name="description" label={<IntlMessages id="page.categories.form.label.description"/>}>
-                        <Input.TextArea rows={6} />
-                    </Form.Item>
-
                     <Form.Item wrapperCol={{ span: 4, offset: 10 }}>
                         <Button type="primary" htmlType="submit">
-                            <IntlMessages id="page.categories.form.save"/>
+                            <IntlMessages id="page.properties.form.save"/>
                         </Button>
                     </Form.Item>
                 </Form>

@@ -23,6 +23,7 @@ function showConfirm(modalContent, okHandler) {
         cancelText: 'Отмена',
     });
 }
+
 export default function Properties() {
     const [properties, setProperties] = useState([]);
     const [pagination, setPagination] = useState({current: 1, pageSize: 10, total: 0});
@@ -62,9 +63,9 @@ export default function Properties() {
             dataIndex: 'actions',
             rowKey: 'actions',
             width: '10%',
-            render: (text, category) => (
+            render: (text, property) => (
                 <div className="isoInvoiceBtnView">
-                    <Link to={`${routeConstants['edit']}/${category.id}`}>
+                    <Link to={`${routeConstants['edit']}/${property.id}`}>
                         <Button color="primary">
                             <i className="ion-edit" />
                         </Button>
@@ -72,8 +73,8 @@ export default function Properties() {
                     <Button
                         onClick={() => {
                             showConfirm(
-                                `Будет удалена категория "${category.name}[ID: ${category.id}]"`,
-                                () => onDeleteModalConfirm(category.id));
+                                `Будет удален атрибут "${property.name}[ID: ${property.id}]"`,
+                                () => onDeleteModalConfirm(property.id));
                         }}
                     >
                         <i className="ion-trash-a" />
@@ -114,7 +115,7 @@ export default function Properties() {
         return propList.map(pp => ({
             ...pp,
             key: `pp${pp.id}`,
-            parent: (pp.category != null) ? pp.category.name : ''
+            category: (pp.category != null) ? pp.category.name : ''
         }))
     };
 
