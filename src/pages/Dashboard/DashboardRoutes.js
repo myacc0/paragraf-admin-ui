@@ -5,6 +5,7 @@ import { routeList as CategoryRoutes } from '@iso/pages/Categories/CategoryRoute
 import { routeList as TagRoutes } from '@iso/pages/Catalog/Tags/TagRoutes';
 import { routeList as UnitRoutes } from '@iso/pages/Catalog/Units/UnitRoutes';
 import { routeList as PropertyRoutes } from '@iso/pages/Catalog/Properties/PropertyRoutes';
+import { routeList as StockOfficeRoutes } from '@iso/pages/StockOffice/StockOfficeRoutes';
 
 const routes = [
 	{
@@ -16,13 +17,10 @@ const routes = [
 	...TagRoutes,
 	...UnitRoutes,
 	...PropertyRoutes,
+	...StockOfficeRoutes,
 	{
 		path: 'products',
 		component: lazy(() => import('@iso/pages/Products/Products')),
-	},
-	{
-		path: 'stock-office',
-		component: lazy(() => import('@iso/pages/StockOffice/StockOffice')),
 	},
 	{
 		path: 'my-profile',

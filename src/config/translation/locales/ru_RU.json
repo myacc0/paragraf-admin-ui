@@ -640,5 +640,14 @@
   "page.properties.form.label.slug": "Слаг(Slug)",
   "page.properties.form.label.category": "Категория(принадлежит)",
   "page.properties.modal.delete.title": "Хотите удалить этот атрибут",
-  "page.properties.modal.delete.text": "Утрибут будет удален:"
+  "page.properties.modal.delete.text": "Утрибут будет удален:",
+  "page.stockoffice": "Склады",
+  "page.stockoffice.add": "Добавить склад",
+  "page.stockoffice.edit": "Изменить склад",
+  "page.stockoffice.remove": "Удалить склад",
+  "page.stockoffice.table.column.name": "Наименование",
+  "page.stockoffice.form.save": "Сохранить",
+  "page.stockoffice.form.label.name": "Наименование",
+  "page.stockoffice.modal.delete.title": "Хотите удалить этот склад",
+  "page.stockoffice.modal.delete.text": "Склад будет удален:"
 }

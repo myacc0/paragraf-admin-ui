@@ -640,5 +640,14 @@
   "page.properties.form.label.slug": "Slug",
   "page.properties.form.label.category": "Category",
   "page.properties.modal.delete.title": "Want to delete this attribute",
-  "page.properties.modal.delete.text": "Attribute will be deleted:"
+  "page.properties.modal.delete.text": "Attribute will be deleted:",
+  "page.stockoffice": "Stock Offices",
+  "page.stockoffice.add": "Add stock office",
+  "page.stockoffice.edit": "Edit stock office",
+  "page.stockoffice.remove": "Remove stock office",
+  "page.stockoffice.table.column.name": "Name",
+  "page.stockoffice.form.save": "Save",
+  "page.stockoffice.form.label.name": "Name",
+  "page.stockoffice.modal.delete.title": "Want to delete this stock office",
+  "page.stockoffice.modal.delete.text": "Stock office will be deleted:"
 }
