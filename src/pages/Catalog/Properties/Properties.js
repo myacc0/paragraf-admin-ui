@@ -11,6 +11,7 @@ import CardWrapper, { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Properties/PropertyRoutes';
 import { Button, Table } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 const confirm = Modals.confirm;
 
 function showConfirm(modalContent, okHandler) {
@@ -85,7 +86,7 @@ export default function Properties() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        CustomHttpClient.delete(`http://localhost:8080/admin-api/catalog/properties/${id}`)
+        CustomHttpClient.delete(`${API_URL}/catalog/properties/${id}`)
             .then(() => {
                 message.success("Аттрибут успешно удален!");
                 getProperties({...pagination});
@@ -99,7 +100,7 @@ export default function Properties() {
 
     const getProperties = (params) => {
         setLoading(true);
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/properties?page=${params.current}&size=${params.pageSize}`)
+        CustomHttpClient.get(`${API_URL}/catalog/properties?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

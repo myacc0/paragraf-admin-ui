@@ -9,6 +9,8 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Properties/PropertyRoutes';
 import { Button, Form, Input, Select } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function PropertyAdd() {
     let history = useHistory();
     const [categories, setCategories] = useState([]);
@@ -20,7 +22,7 @@ export default function PropertyAdd() {
     const getCats = (params) => {
         let queryParams = `?page=${params.page}&size=${params.size}`;
         if (params.name != null) queryParams += `&name=${params.name}`;
-        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?${queryParams}`)
+        CustomHttpClient.get(`${API_URL}/categories?${queryParams}`)
             .then(data => {
                 setCategories(data.list.map(cat => ({ key: `cat${cat.id}`, id: cat.id, name: cat.name })));
             })
@@ -28,7 +30,7 @@ export default function PropertyAdd() {
     };
 
     const saveProperty = (params) => {
-        CustomHttpClient.post('http://localhost:8080/admin-api/catalog/properties', params)
+        CustomHttpClient.post(`${API_URL}/catalog/properties`, params)
             .then(data => {
                 message.success(`Атрибут "${data.name}" добавлен!`, 5);
                 history.push(routeConstants['list']);

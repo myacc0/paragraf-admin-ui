@@ -9,11 +9,13 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/StockOffice/StockOfficeRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function StockOfficeAdd() {
     let history = useHistory();
 
     const saveStockOffice = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/stock-offices?name=${params.name}`, {})
+        CustomHttpClient.post(`${API_URL}/catalog/stock-offices?name=${params.name}`, {})
             .then(data => {
                 message.success(`Склад "${data.name}" добавлен!`, 5);
                 history.push(routeConstants['list']);

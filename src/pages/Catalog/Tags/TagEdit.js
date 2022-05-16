@@ -9,6 +9,7 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Tags/TagRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function TagEdit() {
     let history = useHistory();
@@ -26,7 +27,7 @@ export default function TagEdit() {
     }, [tag, form]);
 
     const getTagById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/tags/${id}`)
+        CustomHttpClient.get(`${API_URL}/catalog/tags/${id}`)
             .then(data => {
                 setTag({
                     name: data.name,
@@ -38,7 +39,7 @@ export default function TagEdit() {
     };
 
     const saveTag = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/tags/${id}`, params)
+        CustomHttpClient.post(`${API_URL}/catalog/tags/${id}`, params)
             .then(data => {
                 message.success(`Тег "${data.name}" изменен!`, 5);
                 history.push(routeConstants['list']);

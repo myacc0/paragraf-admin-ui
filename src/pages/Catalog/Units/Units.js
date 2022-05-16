@@ -11,6 +11,7 @@ import CardWrapper, { Box } from '@iso/pages/Categories/Categories.styles';
 import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { Button, Table } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 const confirm = Modals.confirm;
 
 function showConfirm(modalContent, okHandler) {
@@ -71,7 +72,7 @@ export default function Units() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        CustomHttpClient.delete(`http://localhost:8080/admin-api/catalog/product-units/${id}`)
+        CustomHttpClient.delete(`${API_URL}/catalog/product-units/${id}`)
             .then(() => {
                 message.success("Единица измерения успешно удалена!");
                 getUnits({...pagination});
@@ -85,7 +86,7 @@ export default function Units() {
 
     const getUnits = (params) => {
         setLoading(true);
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/product-units?page=${params.current}&size=${params.pageSize}`)
+        CustomHttpClient.get(`${API_URL}/catalog/product-units?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

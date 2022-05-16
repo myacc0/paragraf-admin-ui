@@ -11,6 +11,7 @@ import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import CardWrapper, { Box } from './Categories.styles';
 import { Button, Table } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 const confirm = Modals.confirm;
 
 function showConfirm(modalContent, okHandler) {
@@ -92,7 +93,7 @@ export default function Categories() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        CustomHttpClient.delete(`http://localhost:8080/admin-api/categories/${id}`)
+        CustomHttpClient.delete(`${API_URL}/categories/${id}`)
             .then(() => {
                 message.success("Категория успешно удалена!");
                 getCats({...pagination});
@@ -106,7 +107,7 @@ export default function Categories() {
 
     const getCats = (params) => {
         setLoading(true);
-        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?page=${params.current}&size=${params.pageSize}`)
+        CustomHttpClient.get(`${API_URL}/categories?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

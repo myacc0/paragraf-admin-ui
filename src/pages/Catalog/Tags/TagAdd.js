@@ -9,11 +9,13 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Tags/TagRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function TagAdd() {
     let history = useHistory();
 
     const saveTag = (params) => {
-        CustomHttpClient.post('http://localhost:8080/admin-api/catalog/tags', params)
+        CustomHttpClient.post(`${API_URL}/catalog/tags`, params)
             .then(data => {
                 message.success(`Тег "${data.name}" добавлен!`, 5);
                 history.push(routeConstants['list']);

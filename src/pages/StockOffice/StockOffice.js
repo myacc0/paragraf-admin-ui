@@ -11,6 +11,7 @@ import CardWrapper, { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/StockOffice/StockOfficeRoutes';
 import { Button, Table } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 const confirm = Modals.confirm;
 
 function showConfirm(modalContent, okHandler) {
@@ -71,7 +72,7 @@ export default function StockOffice() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        CustomHttpClient.delete(`http://localhost:8080/admin-api/catalog/stock-offices/${id}`)
+        CustomHttpClient.delete(`${API_URL}/catalog/stock-offices/${id}`)
             .then(() => {
                 message.success("Склад успешно удален!");
                 getStockOffices({...pagination});
@@ -85,7 +86,7 @@ export default function StockOffice() {
 
     const getStockOffices = (params) => {
         setLoading(true);
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/stock-offices?page=${params.current}&size=${params.pageSize}`)
+        CustomHttpClient.get(`${API_URL}/catalog/stock-offices?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

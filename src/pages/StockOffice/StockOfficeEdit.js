@@ -9,6 +9,8 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/StockOffice/StockOfficeRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function StockOfficeEdit() {
     let history = useHistory();
     let { id } = useParams();
@@ -25,7 +27,7 @@ export default function StockOfficeEdit() {
     }, [so, form]);
 
     const getStockOfficeById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/stock-offices/${id}`)
+        CustomHttpClient.get(`${API_URL}/catalog/stock-offices/${id}`)
             .then(data => {
                 setSo({ name: data.name });
                 console.log(data);
@@ -34,7 +36,7 @@ export default function StockOfficeEdit() {
     };
 
     const saveStockOffice = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/stock-offices/${id}?name=${params.name}`, {})
+        CustomHttpClient.post(`${API_URL}/catalog/stock-offices/${id}?name=${params.name}`, {})
             .then(data => {
                 message.success(`Склад "${data.name}" изменен!`, 5);
                 history.push(routeConstants['list']);

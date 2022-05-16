@@ -9,6 +9,8 @@ import { routeConstants } from '@iso/pages/Categories/CategoryRoutes';
 import { Box } from './Categories.styles';
 import { Button, Form, Input, Select } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function CategoryEdit() {
     let history = useHistory();
     let { id } = useParams();
@@ -30,7 +32,7 @@ export default function CategoryEdit() {
     }, [category, categories, form]);
 
     const getCategoryById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/categories/${id}`)
+        CustomHttpClient.get(`${API_URL}/categories/${id}`)
             .then(data => {
                 setCategory({
                     name: data.name,
@@ -45,7 +47,7 @@ export default function CategoryEdit() {
     const getCategories = (params) => {
         let queryParams = `?page=${params.page}&size=${params.size}`;
         if (params.name != null) queryParams += `&name=${params.name}`;
-        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?${queryParams}`)
+        CustomHttpClient.get(`${API_URL}/categories?${queryParams}`)
             .then(data => {
                 setCategories(data.list.map(cat => ({ key: `cat${cat.id}`, id: cat.id, name: cat.name })));
             })
@@ -53,7 +55,7 @@ export default function CategoryEdit() {
     };
 
     const saveCategory = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/categories/${id}`, params)
+        CustomHttpClient.post(`${API_URL}/categories/${id}`, params)
             .then(data => {
                 message.success(`Категория "${data.name}" изменена!`, 5);
                 history.push(routeConstants['list']);

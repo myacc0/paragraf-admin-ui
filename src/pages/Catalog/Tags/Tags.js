@@ -11,6 +11,7 @@ import CardWrapper, { Box } from '@iso/pages/Categories/Categories.styles';
 import CustomHttpClient from "@iso/lib/helpers/customHttpClient";
 import { Button, Table } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
 const confirm = Modals.confirm;
 
 function showConfirm(modalContent, okHandler) {
@@ -78,7 +79,7 @@ export default function Tags() {
     ];
 
     const onDeleteModalConfirm = (id) => {
-        CustomHttpClient.delete(`http://localhost:8080/admin-api/catalog/tags/${id}`)
+        CustomHttpClient.delete(`${API_URL}/catalog/tags/${id}`)
             .then(() => {
                 message.success("Тег успешно удален!");
                 getTags({...pagination});
@@ -92,7 +93,7 @@ export default function Tags() {
 
     const getTags = (params) => {
         setLoading(true);
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/tags?page=${params.current}&size=${params.pageSize}`)
+        CustomHttpClient.get(`${API_URL}/catalog/tags?page=${params.current}&size=${params.pageSize}`)
             .then(data => {
                 setPagination({
                     current: params.current,

@@ -9,6 +9,8 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Units/UnitRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function UnitEdit() {
     let history = useHistory();
     let { id } = useParams();
@@ -25,7 +27,7 @@ export default function UnitEdit() {
     }, [unit, form]);
 
     const getUnitById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/product-units/${id}`)
+        CustomHttpClient.get(`${API_URL}/catalog/product-units/${id}`)
             .then(data => {
                 setUnit({ name: data.name });
                 console.log(data);
@@ -34,7 +36,7 @@ export default function UnitEdit() {
     };
 
     const saveUnit = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/product-units/${id}`, params)
+        CustomHttpClient.post(`${API_URL}/catalog/product-units/${id}`, params)
             .then(data => {
                 message.success(`Единица измерения "${data.name}" изменена!`, 5);
                 history.push(routeConstants['list']);

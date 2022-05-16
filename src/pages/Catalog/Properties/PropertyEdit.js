@@ -9,6 +9,8 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Properties/PropertyRoutes';
 import { Button, Form, Input, Select } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function PropertyEdit() {
     let history = useHistory();
     let { id } = useParams();
@@ -30,7 +32,7 @@ export default function PropertyEdit() {
     }, [property, categories, form]);
 
     const getPropertyById = (id) => {
-        CustomHttpClient.get(`http://localhost:8080/admin-api/catalog/properties/${id}`)
+        CustomHttpClient.get(`${API_URL}/catalog/properties/${id}`)
             .then(data => {
                 setProperty({
                     name: data.name,
@@ -44,7 +46,7 @@ export default function PropertyEdit() {
     const getCategories = (params) => {
         let queryParams = `?page=${params.page}&size=${params.size}`;
         if (params.name != null) queryParams += `&name=${params.name}`;
-        CustomHttpClient.get(`http://localhost:8080/admin-api/categories?${queryParams}`)
+        CustomHttpClient.get(`${API_URL}/categories?${queryParams}`)
             .then(data => {
                 setCategories(data.list.map(cat => ({ key: `cat${cat.id}`, id: cat.id, name: cat.name })));
             })
@@ -52,7 +54,7 @@ export default function PropertyEdit() {
     };
 
     const saveProperty = (params) => {
-        CustomHttpClient.post(`http://localhost:8080/admin-api/catalog/properties/${id}`, params)
+        CustomHttpClient.post(`${API_URL}/catalog/properties/${id}`, params)
             .then(data => {
                 message.success(`Атрибут "${data.name}" изменен!`, 5);
                 history.push(routeConstants['list']);

@@ -9,11 +9,13 @@ import { Box } from '@iso/pages/Categories/Categories.styles';
 import { routeConstants } from '@iso/pages/Catalog/Units/UnitRoutes';
 import { Button, Form, Input } from 'antd';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function UnitAdd() {
     let history = useHistory();
 
     const saveUnits = (params) => {
-        CustomHttpClient.post('http://localhost:8080/admin-api/catalog/product-units', params)
+        CustomHttpClient.post(`${API_URL}/catalog/product-units`, params)
             .then(data => {
                 message.success(`Единица измерения "${data.name}" добавлена!`, 5);
                 history.push(routeConstants['list']);
