@@ -149,7 +149,7 @@ export default function Properties() {
                                 pagination={pagination}
                                 loading={loading}
                                 onChange={handleTableChange}
-                            />
+                            />1
                         </div>
                     )}
                 </CardWrapper>
